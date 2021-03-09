@@ -180,9 +180,10 @@ body{
     right: -25px;
     width: 0;
     height: 0;
-    border-top: 15px solid transparent;
+    border-radius: 49%;
+    border-top: 10px solid transparent;
     border-left: 40px solid #0e102c;
-    border-bottom: 15px solid transparent;
+    border-bottom: 10px solid transparent;
 }
 .div-1 .txt-1{
     padding: 12px 5px;
@@ -244,9 +245,10 @@ body{
     left: -25px;
     width: 0;
     height: 0;
-    border-top: 15px solid transparent;
+    border-radius: 49%;
+    border-top: 10px solid transparent;
     border-left: 40px solid #0e102c;
-    border-bottom: 15px solid transparent;
+    border-bottom: 10px solid transparent;
     transform: rotate(180deg);
 }
 .div-3 .txt-3{
@@ -263,7 +265,7 @@ body{
 }
 .div-3 .txt-4{
     padding: 12px 5px;
-    bottom: -8%;
+    top: 68%;
     left: 0;
 }
 .div-3 .txt-4 h1{
