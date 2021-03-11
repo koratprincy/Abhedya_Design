@@ -13,14 +13,16 @@ body{
 .wrapper{
     position: relative;
     width: 100%;
-    height: 150vh;
+    height: 35cm;
+    min-height: 35cm;
     background-color: #131635;
 }
 .wrapper .header{
     position: relative;
     width: 100%;
-    height: 6rem;
-    padding: 1.25rem 5rem;
+    height: 8rem;
+    min-height: 8rem;
+    padding: 1.25rem 4rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -44,7 +46,7 @@ body{
     color: #cfcfcf;
     text-decoration: none;
     padding: 10px 15px;
-    font-size: 1rem;
+    font-size: 1.15rem;
     letter-spacing: 0.5px;
 }
 .wrapper .header .nav li a:hover{
@@ -53,17 +55,20 @@ body{
 }
 #particles-js{
     width: 100%;
-    height: 35vh; 
+    height: 10cm;
+    min-height: 10cm; 
     background: #0e102c;
 }
 #particles-js1{
     width: 100%;
-    height: 35vh; 
+    height: 10cm; 
+    min-height: 10cm; 
     background: #0e102c;
 }
 .wrapper .main-info{
     width: 100%;
-    height: 100vh;
+    height: 22cm;
+    min-height: 22cm;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -123,18 +128,20 @@ body{
 
 .typography {
     width: 100%;
-    height: 170vh;
+    height: 35cm;
+    min-height: 35cm;
     background: linear-gradient(0deg, #a2bd9f 0%, #cfcfcf 100%);
 }
 .typography .container {
     width: 90%;
-    height: 160vh;
+    height: 100%;
     display: block;
     margin: auto;
 }
 .heading{
     width: 100%;
-    height: 15.5rem;
+    height: 14rem;
+    min-height: 14rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -146,7 +153,8 @@ body{
 }
 .main{
     width: 100%;
-    height: 110vh;
+    height: 30cm;
+    min-height: 30cm;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -154,7 +162,8 @@ body{
 .div-1{
     position: relative;
     width: 42%;
-    height: 100%;
+    height: 25cm;
+    min-height: 25cm;
 }
 .div-1 .msg-1{
     position: absolute;
@@ -170,7 +179,7 @@ body{
     background: #0e102c;
     color: #cfcfcf;
     font-weight: 300;
-    font-size: 1.15rem;
+    font-size: 1.2rem;
     text-align: center;
 }
 .div-1 .msg-1 p::before{
@@ -187,7 +196,7 @@ body{
 }
 .div-1 .txt-1{
     padding: 12px 5px;
-    top: -2.5%;
+    top: 0;
     right: 0;
 }
 .div-1 .txt-1 h1{
@@ -199,7 +208,7 @@ body{
 }
 .div-1 .txt-2{
     padding: 12px 5px;
-    top: 42%;
+    top: 40%;
     right: 0;
 }
 .div-1 .txt-2 h1{
@@ -211,14 +220,15 @@ body{
 }
 .div-2{
     width: 8px;
-    height: 100%;
+    height: 25cm;
+    min-height: 25cm;
     border: 2px solid #0e102c;
 }
 .div-3{
     position: relative;
     width: 42%;
-    height: 100%;
-    min-height: 100%;
+    height: 25cm;
+    min-height: 25cm;
 }
 .div-3 .msg-3{
     position: absolute;
@@ -235,7 +245,7 @@ body{
     background: #0e102c;
     color: #cfcfcf;
     font-weight: 300;
-    font-size: 1.15rem;
+    font-size: 1.2rem;
     text-align: center;
 }
 .div-3 .msg-3 p::before{
@@ -265,7 +275,7 @@ body{
 }
 .div-3 .txt-4{
     padding: 12px 5px;
-    top: 68%;
+    bottom: 0%;
     left: 0;
 }
 .div-3 .txt-4 h1{
@@ -281,7 +291,8 @@ body{
 
 .carousel{
     width: 100%;
-    height: 100vh;
+    height: 20cm;
+    min-height: 20cm;
     background-color: #131635e1;
     display: flex;
     flex-direction: column;
@@ -334,8 +345,9 @@ body{
 .contact-form{
     padding: 8rem 3rem;
     width: 100%;
-    height: 100vh;
-    background: linear-gradient(90deg, #a2bd9f 0%, #cfcfcf 100%);
+    height: 20cm;
+    min-height: 20cm;
+    background: linear-gradient(45deg, #9ebd9a 0%, #cfcfcf 100%);
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -414,20 +426,32 @@ body{
 
 .footer {
     width: 100%;
-    height: 75vh;
+    height: 18cm;
+    min-height: 18cm;
     background-color: #0e102c;
     padding: 1.25rem 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 .footer .nav-bar{
     width: 100%;
     height: 80%;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     margin-top: 2rem;
 }
 .footer .nav-bar .ftr ul {
     list-style: none;
+    margin-left: 1.5rem;
+}
+.footer .nav-bar .ftr#upper {
+    align-items: flex-start;
+}
+.footer .nav-bar .ftr#upper ul{
+   margin-top: 4.25rem;
+   margin-left: 1.5rem;
 }
 .footer .nav-bar .ftr ul li{
     padding: 1rem 0.5rem;
@@ -436,26 +460,27 @@ body{
     color: #cfcfcf;
     font-size: 1rem;
     text-decoration: none;
+    font-weight: 500;
 }
 .footer .nav-bar .ft-1{
-    width: 18%;
+    width: 25%;
     height: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
 }
 .footer .nav-bar .ft-1 h1{
     color: #cfcfcf;
     font-weight: 400;
     font-size: 1.25rem;
     text-transform: uppercase;
-    margin-top: 1rem;
-    text-align: center;
     letter-spacing: 1px;
+    margin-top: 5.25rem;
+    margin-left: 3rem;
 }
 .ft-1 ul{
     list-style: none;
+    margin-top: 11.75rem;
+    margin-left: 1.5rem;
 }
 .ft-1 ul li{
     padding: 0.75rem 0rem;
@@ -464,31 +489,34 @@ body{
     color: #cfcfcf;
     font-size: 1rem;
     text-decoration: none;
+    font-weight: 500;
 }
 .footer .nav-bar .ftr{
-    width: 18%;
+    width: 17%;
     height: 100%;
     display: flex;
     justify-content: flex-start;
-    align-items: flex-start;
+    align-items: center;
 }
 .footer .footer-line{
     width: 100%;
-    height: 10%;
+    height: 20%;
 }
 .footer .footer-line p{
-    font-size: 0.75rem;
+    font-size: 1rem;
+    padding-bottom: 3.5rem;
     color: #cfcfcf;
     text-align: center;
-    margin-top: 1rem;
-    font-weight: 400;
-    padding-bottom: 2rem;
+    font-weight: 500;
     letter-spacing: 1.5px;
 }
 
 /*-----Media Querry----------------------------------------------*/
 
 @media(max-width:1200px){
+    .wrapper .header{
+        padding: 1.25rem 2.75rem;
+    }
     .main-info .left-info h1{
         font-size: 3.5rem;
     }
@@ -504,7 +532,7 @@ body{
         margin-bottom: 1.5rem;
     }
     .div-3 .txt-4 {
-        bottom: -8%;
+        bottom: 0%;
         left: 0;
     }
     .heading h1 {
@@ -528,22 +556,25 @@ body{
         margin-top: 0.5rem;
     }
     .ft-1 ul li a{
-        font-size: 0.90rem;
+        font-size: 0.95rem;
     }
     .footer .nav-bar .ftr ul li a {
-        font-size: 0.90rem;
+        font-size: 0.95rem;
     }
     .footer .footer-line p {
         font-size: 1rem;
-        padding-bottom: 1.5rem;
+        padding-bottom: 3rem;
         letter-spacing: 1px;
     }
 }
 
 
-@media(max-width:900px){
+@media(max-width:950px){
     .wrapper .header {
-        padding: 1.25rem 3rem;
+        padding: 1.25rem 2rem;
+    }
+    .wrapper .header .nav li a {
+        font-size: 1rem;
     }
     .main-info .left-info h1 {
         font-size: 3rem;
@@ -555,11 +586,11 @@ body{
         margin-bottom: 2.5rem;
     }
     .div-1 .msg-1 p {
-        font-size: 1rem;
+        font-size: 1.15rem;
         height: 65%;
     }
     .div-3 .msg-3 p {
-        font-size: 1rem;
+        font-size: 1.15rem;
         height: 65%;
     }
     .heading h1 {
@@ -581,25 +612,37 @@ body{
     }
     .footer {
         width: 100%;
-        height: 70vh;
+        height: 18cm;
         background-color: #0e102c;
         padding: 1rem 0.5rem;
     }
     .footer .nav-bar{
         margin-top: 1.5rem;
     }
+    .footer .nav-bar .ft-1{
+        width: 22%;
+    }
+    .footer .nav-bar .ftr{
+        width: 19%;
+    }
     .footer .nav-bar .ft-1 h1 {
        font-size: 1.25rem;
     }
+    .ft-1 ul {
+        margin-top: 11.25rem;
+    }
+    .footer .nav-bar .ftr#upper ul {
+        margin-top: 4.25rem;
+    }
     .ft-1 ul li a{
-        font-size: 0.85rem;
+        font-size: 0.9rem;
     }
     .footer .nav-bar .ftr ul li a {
-        font-size: 0.85rem;
+        font-size: 0.9rem;
     }
     .footer .footer-line p {
-        font-size: 0.75rem;
-        padding-bottom: 1.5rem;
+        font-size: 0.85rem;
+        padding-bottom: 3rem;
         letter-spacing: 1px;
     }
 }
@@ -608,8 +651,8 @@ body{
 @media(max-width: 800px){
     .header .toggle {
         position: absolute;
-        top: 42px;
-        right: 34px;
+        top: 55px;
+        right: 45px;
         height: 20px;
         width: 30px;
         background:url(../img/menu.png);
@@ -619,8 +662,8 @@ body{
     }
     .toggle.active{
         position: fixed;
-        top: 42px;
-        right: 35px;
+        top: 55px;
+        right: 45px;
         width: 20px;
         height: 20px;
         background: url(../img/close.png);
@@ -658,7 +701,7 @@ body{
         transition: 0.75s;
     }
     .right-info .information .text-main p {
-        font-size: 0.9rem;
+        font-size: 1rem;
         margin-bottom: 2.5rem;
         letter-spacing: 0.25px;
     }
@@ -675,7 +718,7 @@ body{
         justify-content: space-between;
     }
     .main-info .left-info h1 {
-        font-size: 2rem;
+        font-size: 2.5rem;
         margin-left: 2.5rem;
     }
     .right-info{
@@ -685,13 +728,8 @@ body{
         width: 85%;
         padding: 0rem;
     }
-    .right-info .information .text-main p {
-        font-size: 0.9rem;
-        line-height: 1.25;
-        margin-bottom: 1.5rem;
-    }
     .right-info .information .text-main li a {
-        font-size: 1rem;
+        font-size: 1.20rem;
     }
     .typography .container {
         width: 100%;
@@ -710,30 +748,36 @@ body{
     .div-1 .msg-1 {
         right: 0;
         position: absolute;
-        width: 16rem;
+        width: 18rem;
     }
     .div-1 .msg-1 h1{
         font-size: 1.25rem;
     }
     .div-1 .msg-1 p {
+        font-size: 1rem;
         position: relative;
-        padding: 20px 5px;
-        width: 14rem;
-        height: 70%;
+        padding: 20px 15px;
+        width: 16rem;
+        height: 65%;
+    }
+    .div-1 .txt-2 {
+        top: 41%;
     }
     .main .div-3{
         width: 47%;
     }
     .div-3 .msg-3 {
         position: absolute;
-        width: 16rem;
+        width: 18rem;
+        bottom: 0%;
     }
     .div-3 .msg-3 p {
         position: relative;
-        padding: 20px 5px;
+        font-size: 1rem;
+        padding: 20px 15px;
         margin-top: 8px;
-        width: 14rem;
-        height: 70%;
+        width: 16rem;
+        height: 65%;
     }
     .div-3 .msg-3 h1{
         font-size: 1.25rem;
@@ -763,72 +807,101 @@ body{
     }
     .footer {
         width: 100%;
-        height: 70vh;
-        background-color: #131635;
-        padding: 1rem 0.5rem;
+        height: 45cm;
+        background-color: #0e102c;
+        padding: 2rem 3rem;
     }
     .footer .nav-bar{
-        margin-top: 2rem;
+        width: 100%;
+        height: 90%;
+        flex-direction: column;
+        align-items: flex-start;
     }
-    .footer .nav-bar .ft-1 h1 {
-        font-size: 0.85rem;
-        margin-top: 0.75rem;
+    .footer .nav-bar .ftr ul {
+        list-style: none;
+    }
+    .footer .nav-bar .ftr#upper ul {
+        margin-top: 0rem;
+    }
+    .footer .nav-bar .ftr ul li{
+        padding: 0.5rem;
+    }
+    .footer .nav-bar .ftr ul li a{
+        color: #cfcfcf;
+        font-size: 1rem;
+        text-decoration: none;
+    }
+    .footer .nav-bar .ft-1{
+        width: 100%;
+        height: 15%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: flex-start;
+    }
+    .footer .nav-bar .ft-1 h1{
+        color: #cfcfcf;
+        font-weight: 400;
+        font-size: 1.25rem;
+        text-transform: uppercase;
         letter-spacing: 1px;
+        margin-top: 0rem;
     }
-    .footer .nav-bar .ft-1 p {
-        font-size: 0.55rem;
-        margin-top: 0.15rem;
-        letter-spacing: 3.5px;
+    .ft-1 ul{
+        list-style: none;
+        margin-top: 6rem;
     }
-    .footer .nav-bar .ftr {
-        width: 15%;
-        height: 100%;
+    .ft-1 ul li{
+        padding: 0.35rem;
     }
     .ft-1 ul li a{
-        font-size: 0.75rem;
+        color: #cfcfcf;
+        font-size: 1rem;
+        text-decoration: none;
     }
-    .footer .nav-bar .ftr ul li a {
-        font-size: 0.75rem;
+    .footer .nav-bar .ftr{
+        margin-top: 3rem;
+        width: 100%;
+        height: 17%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
     }
-    .footer .footer-line p {
-        font-size: 0.75rem;
-        padding-bottom: 1.25rem;
-        letter-spacing: 0.5px;
+    .footer .footer-line{
+        width: 100%;
+        height: 5%;
     }
-    .footer .nav-bar .ft-1 {
-        height: 110%;
-        justify-content: space-around;
+    .footer .footer-line p{
+        font-size: 1rem;
+        color: #cfcfcf;
+        text-align: center;
+        margin-top: 1.5rem;
+        font-weight: 400;
+        padding-bottom: 3rem;
+        letter-spacing: 1.5px;
     }
-    .form-2 form .btn {
-        font-size: 1.25rem;
-    }
+    
 }
 
 
-@media(max-width:550px){
+@media(max-width:600px){
     .wrapper{
-        height: 110vh;
+        height: 25cm;
     }
     .wrapper .main-info{
-        height: 65vh;
+        height: 10cm;
     }
     #particles-js {
-        height: 30vh;
+        height: 10cm;
     }
     #particles-js1 {
-        height: 30vh;
-    }
-    .right-info .information .text-main p {
-        font-size: 0.7rem;
-        line-height: 1.25;
-        word-spacing: 0.15rem;
-        letter-spacing: 0.5;
+        height: 10cm;
     }
     .header .nav.active li{
         margin-bottom: 2.5rem;
     }
     .header .nav.active li a{
-        font-size: 1rem;
+        font-size: 1.25rem;
     }
     .wrapper .header {
         padding: 1.25rem 2.5rem;
@@ -837,56 +910,63 @@ body{
         justify-content: space-between;
     }
     .main-info .left-info h1 {
-        font-size: 1.5rem;
-        margin-left: 2.5rem;
+        font-size: 2rem;
+        margin-left: 2rem;
     }
     .right-info .information {
-        padding: 5rem 1rem 1rem 1rem;
+        padding: 1rem
     }
-    .right-info .information p {
-        font-size: 0.65rem;
-        margin-bottom: 0.75rem;
+    .right-info .information .text-main p {
+        font-size: 0.9rem;
+        margin-bottom: 1.25rem;
     }
-    .right-info .information li a {
-        font-size: 0.8rem;
+    .right-info .information .text-main li a {
+        font-size: 0.9rem;
     }
     .typography {
         width: 100%;
-        height: 110vh;
+        height: 25cm;
+        min-height: 25cm;
     }
     .typography .container {
         width: 100%;
-        height: 100vh;
-        
+        height: 85%;  
     }
     .carousel{
         height: 75vh;
     }
     .heading h1 {
-        font-size: 1.5rem;
+        font-size: 1.75rem;
     }
     .main {
         width: 100%;
-        height: 75vh;
+        height: 15cm;
+        min-height: 15cm;
     }
     .main .div-1{
         width: 47%;
+        height: 16cm;
+        min-height: 16cm;
+    }
+    .div-2{
+        height: 16cm;
+        min-height: 16cm;
     }
     .div-1 .msg-1 {
         right: 0;
         position: absolute;
-        width: 11rem;
+        width: 14rem;
         height: 12rem;
     }
     .div-1 .msg-1 h1{
-        font-size: 1rem;
+        font-size: 1.25rem;
     }
     .div-1 .msg-1 p {
         position: relative;
-        padding: 25px 5px;
-        width: 9rem;
-        height: 85%;
-        font-size: 0.60rem;
+        padding: 15px 5px;
+        width: 12rem;
+        height: 95%;
+        font-size: 13px;
     }
     .div-1 .msg-1.txt-1{
         top: 0%;
@@ -898,29 +978,31 @@ body{
         bottom: 20%;
     }
     .div-3 .msg-3.txt-4{
-        bottom: 2%;
+        bottom: 7%;
     }
     .main .div-3{
         width: 47%;
+        height: 16cm;
+        min-height: 16cm;
     }
     .div-3 .msg-3 {
         position: absolute;
-        width: 11rem;
-        height: 12rem;
+        width: 14rem;
+        height: 11rem;
     }
     .div-3 .msg-3 p {
         position: relative;
-        padding: 25px 5px;
+        padding: 15px 5px;
         margin-top: 8px;
-        width: 9rem;
-        height: 85%;
-        font-size: 0.6rem;
+        width: 12rem;
+        height: 100%;
+        font-size: 13px;
     }
     .div-3 .msg-3 h1{
-        font-size: 1rem;
+        font-size: 1.25rem;
     }
     .carousel .headings h1 {
-        font-size: 1.5rem;
+        font-size: 1.75rem;
     }
     .heading {
         height: 10rem;
@@ -949,7 +1031,7 @@ body{
     }
     .footer {
         width: 100%;
-        height: 170vh;
+        height: 45cm;
         background-color: #0e102c;
         padding: 2rem 3rem;
     }
@@ -962,17 +1044,20 @@ body{
     .footer .nav-bar .ftr ul {
         list-style: none;
     }
+    .footer .nav-bar .ftr#upper ul {
+        margin-top: 0rem;
+    }
     .footer .nav-bar .ftr ul li{
-        padding: 0.35rem;
+        padding: 0.5rem;
     }
     .footer .nav-bar .ftr ul li a{
         color: #cfcfcf;
-        font-size: 0.8rem;
+        font-size: 1rem;
         text-decoration: none;
     }
     .footer .nav-bar .ft-1{
         width: 100%;
-        height: 60%;
+        height: 15%;
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
@@ -984,23 +1069,24 @@ body{
         font-size: 1.25rem;
         text-transform: uppercase;
         letter-spacing: 1px;
-        padding: 1.5rem 0.35rem;
+        margin-top: 0rem;
     }
     .ft-1 ul{
         list-style: none;
+        margin-top: 6rem;
     }
     .ft-1 ul li{
         padding: 0.35rem;
     }
     .ft-1 ul li a{
         color: #cfcfcf;
-        font-size: 0.8rem;
+        font-size: 1rem;
         text-decoration: none;
     }
     .footer .nav-bar .ftr{
         margin-top: 3rem;
         width: 100%;
-        height: 60%;
+        height: 17%;
         display: flex;
         justify-content: flex-start;
         align-items: flex-start;
@@ -1010,25 +1096,250 @@ body{
         height: 5%;
     }
     .footer .footer-line p{
-        font-size: 0.8rem;
+        font-size: 1rem;
         color: #cfcfcf;
         text-align: center;
         margin-top: 1.5rem;
         font-weight: 400;
-        padding-bottom: 1.5rem;
+        padding-bottom: 3rem;
         letter-spacing: 1.5px;
-    }
-}
-
-@media(max-width:480px){
-    .right-info .information .text-main p {
-        font-size: 0.65rem;
-        line-height: 1.25;
-        letter-spacing: 1px;
-    }
-    .right-info .information .text-main li a {
-        font-size: 0.7rem;
     }
     
 }
+@media(max-width:480px){
+    .wrapper{
+        height: 25cm;
+    }
+    .wrapper .main-info{
+        height: 10cm;
+    }
+    #particles-js {
+       min-height: 8cm;
+       height: 8cm;
+    }
+    #particles-js1 {
+        height: 8cm;
+        min-height: 8cm;
+    }
+    .header .nav.active li{
+        margin-bottom: 2.5rem;
+    }
+    .header .nav.active li a{
+        font-size: 1.25rem;
+    }
+    .wrapper .header {
+        padding: 1.25rem 2.5rem;
+    }
+    .wrapper .main-info{
+        justify-content: center;
+        flex-direction: column;
+    }
+    .main-info .left-info{
+        width: 100%;
+    }
+    .main-info .right-info{
+        width: 100%;
+    }
+    .main-info .left-info h1 {
+        font-size: 2.25rem;
+        margin-left: 0rem;
+    }
+    .right-info .information {
+        padding: 1rem
+    }
+    .right-info .information .text-main p {
+        font-size: 0.9rem;
+        margin-bottom: 1.25rem;
+        line-height: 1.35;
+    }
+    .right-info .information .text-main li a {
+        font-size: 1rem;
+    }
+    .typography {
+        width: 100%;
+        height: 30cm;
+        min-height: 30cm;
+    }
+    .typography .container {
+        width: 100%;
+        height: 85%;  
+    }
+    .carousel{
+        height: 75vh;
+    }
+    .heading h1 {
+        font-size: 1.75rem;
+    }
+    .main {
+        margin-top: 4rem;
+        width: 100%;
+        height: 20cm;
+        min-height: 20cm;
+
+    }
+    .main .div-1{
+        width: 47%;
+        height: 22cm;
+        min-height: 22cm;
+    }
+    .div-2{
+        height: 22cm;
+        min-height: 22cm;
+    }
+    .div-1 .msg-1 {
+        right: 0;
+        position: absolute;
+        width: 11rem;
+        height: 16rem;
+    }
+    .div-1 .msg-1 h1{
+        font-size: 1.25rem;
+    }
+    .div-1 .msg-1 p {
+        position: relative;
+        padding: 15px 5px;
+        width: 9rem;
+        height: 95%;
+        font-size: 12.5px;
+    }
+    .div-1 .msg-1.txt-1{
+        top: 0%;
+    }
+    .div-3 .msg-3.txt-3{
+        top: 23%;
+    }
+    .div-1 .msg-1.txt-2{
+        top: 43%;
+    }
+    .div-3 .msg-3.txt-4{
+        bottom: 4%;
+    }
+    .main .div-3{
+        width: 47%;
+        height: 22cm;
+        min-height: 22cm;
+    }
+    .div-3 .msg-3 {
+        position: absolute;
+        width: 11rem;
+        height: 16rem;
+    }
+    .div-3 .msg-3 p {
+        position: relative;
+        padding: 15px 5px;
+        margin-top: 8px;
+        width: 9rem;
+        height: 95%;
+        font-size: 12.5px;
+    }
+    .div-3 .msg-3 h1{
+        font-size: 1.25rem;
+    }
+    .carousel .headings h1 {
+        font-size: 1.75rem;
+    }
+    .heading {
+        height: 10rem;
+    }
+    .contact-form{
+        padding: 3rem 2.5rem;
+        flex-direction: column;
+    }
+    .contact-form .form-1{
+        width: 100%;
+        height: 45%;
+    }
+    .contact-form .form-1 h1 {
+        font-size: 2rem;
+    }
+    .contact-form .form-2 {
+        width: 100%;
+        height: 100%;
+        padding: 3.5rem 4rem;
+    }
+    .contact-form .form-2 {
+        padding: 2.5rem 0rem;
+    }
+    .form-2 form .btn {
+        font-size: 0.8rem;
+    }
+    .footer {
+        width: 100%;
+        height: 45cm;
+        background-color: #0e102c;
+        padding: 2rem 3rem;
+    }
+    .footer .nav-bar{
+        width: 100%;
+        height: 90%;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .footer .nav-bar .ftr ul {
+        list-style: none;
+    }
+    .footer .nav-bar .ftr#upper ul {
+        margin-top: 0rem;
+    }
+    .footer .nav-bar .ftr ul li{
+        padding: 0.5rem;
+    }
+    .footer .nav-bar .ftr ul li a{
+        color: #cfcfcf;
+        font-size: 1rem;
+        text-decoration: none;
+    }
+    .footer .nav-bar .ft-1{
+        width: 100%;
+        height: 15%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: flex-start;
+    }
+    .footer .nav-bar .ft-1 h1{
+        color: #cfcfcf;
+        font-weight: 400;
+        font-size: 1.25rem;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        margin-top: 0rem;
+    }
+    .ft-1 ul{
+        list-style: none;
+        margin-top: 6rem;
+    }
+    .ft-1 ul li{
+        padding: 0.35rem;
+    }
+    .ft-1 ul li a{
+        color: #cfcfcf;
+        font-size: 1rem;
+        text-decoration: none;
+    }
+    .footer .nav-bar .ftr{
+        margin-top: 3rem;
+        width: 100%;
+        height: 17%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+    .footer .footer-line{
+        width: 100%;
+        height: 5%;
+    }
+    .footer .footer-line p{
+        font-size: 1rem;
+        color: #cfcfcf;
+        text-align: center;
+        margin-top: 1.5rem;
+        font-weight: 400;
+        padding-bottom: 3rem;
+        letter-spacing: 1.5px;
+    }
+    
+}
+
+
 
